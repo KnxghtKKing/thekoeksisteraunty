@@ -145,49 +145,158 @@
     </div>
 </section>
 
-<!-- Heritage Day Feature Section with Background Image -->
-<section class="relative py-16 px-6 rounded-3xl my-12 text-center max-w-5xl mx-auto overflow-hidden shadow-xl border border-stone-200">
+<!-- ================================================================= -->
+<!-- START: FAMILY PLATTER SECTION                                     -->
+<!-- Place this directly above your "Order Fresh Batches" section     -->
+<!-- ================================================================= -->
+<section class="family-platter-section">
+    <div class="container">
 
-    <!-- Background Image Container -->
-    <div class="absolute inset-0 z-0">
-        <img src="images/SouthAfrica_Flag.jpeg"
-             alt="South African Heritage and traditional local food celebration"
-             class="w-full h-full object-cover">
+        <!-- Category Badge Tag -->
+        <span class="badge-tag">Family & Gatherings</span>
 
-        <!-- Dark Overlay (Essential for text readability) -->
-        <div class="absolute inset-0 bg-stone-950/60 backdrop-blur-[2px]"></div>
-    </div>
+        <!-- Main Headline with Orange Accent Text -->
+        <h2>Big Enough to Share <span class="text-accent">(If You Want To!)</span></h2>
 
-    <!-- Content (Raised above background) -->
-    <div class="relative z-10 max-w-3xl mx-auto">
-        <!-- Heritage Day Badge -->
-        <span class="inline-block bg-white text-amber-950 text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5 shadow">
-            Celebrate Heritage Day • 24 September
-        </span>
-
-        <!-- Inspiring Heading -->
-        <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6 font-serif leading-tight">
-            Rooted in Tradition. <br>Crafted with Love.
-        </h2>
-
-        <!-- Inspiring Narrative Text -->
-        <p class="text-stone-100 text-lg md:text-xl leading-relaxed mb-8 max-w-2xl mx-auto">
-            Every Cape Malay koeksister carries generations of rich storytelling, warmth, and togetherness. As we celebrate Heritage Day, we honor the recipes passed down through families, the lingering aroma of ground spices, and the sweet tradition of sharing warmth with those we love.
+        <!-- Body Description Paragraph -->
+        <p>
+            Treat the kids, spoil the grandparents, or stock the fridge for weekend visits.
+            Our 12-pack and 24-pack family platters are hand-braided fresh, soaked in rich cinnamon syrup,
+            and made to bring everyone around the table.
         </p>
 
-        <!-- Call to Action Subtext & Quick Order Button -->
-        <p class="text-white font-semibold text-lg mb-8">
-            Bring authentic heritage to your table this Heritage Day. Pre-order your batch today!
-        </p>
+        <!-- Platter Option Cards (12 Pack & 24 Pack Boxes) -->
+        <div class="platter-highlights">
+            <!-- Card 1: 12 Pack -->
+            <div class="platter-badge">
+                <span class="count">12 Pack</span>
+                <span class="label">Half Dozen Platter</span>
+            </div>
 
-        <a href="https://wa.me/27713181651?text=Hi%20Koeksister%20Aunty!%20I%20want%20to%20pre-order%20for%20Heritage%20Day"
-           target="_blank"
-           aria-label="Pre-order koeksisters for Heritage Day via WhatsApp"
-           class="inline-block bg-white hover:bg-amber-100 text-amber-950 font-bold px-10 py-4 rounded-xl shadow-lg transition duration-200 transform hover:-translate-y-1 hover:scale-105 text-lg">
-            Pre-Order for Heritage Day
+            <!-- Card 2: 24 Pack -->
+            <div class="platter-badge">
+                <span class="count">24 Pack</span>
+                <span class="label">Full Family Platter</span>
+            </div>
+        </div>
+
+        <!-- Direct WhatsApp Order Button -->
+        <a href="https://wa.me/27713181651?text=Hi%20Aunty,%20I'd%20like%20to%20order%20a%20Family%20Platter!" class="cta-button">
+            Pre-Order a Family Platter
         </a>
+
     </div>
 </section>
+
+
+<!-- ================================================================= -->
+<!-- STYLES FOR THE FAMILY PLATTER SECTION                             -->
+<!-- This CSS centers text, creates dark cards, and styles buttons     -->
+<!-- ================================================================= -->
+<style>
+    /* Main section wrapper - Centers content and adds padding */
+    .family-platter-section {
+        padding: 60px 20px;
+        text-align: center;
+        background: transparent;
+    }
+
+    /* Container width limit to keep paragraphs readable on desktop */
+    .family-platter-section .container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    /* Small orange tag above main title */
+    .family-platter-section .badge-tag {
+        display: inline-block;
+        font-size: 0.85rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        color: #ff9800; /* Matches website orange theme */
+        margin-bottom: 12px;
+    }
+
+    /* White main title */
+    .family-platter-section h2 {
+        font-size: 2.2rem;
+        color: #ffffff; /* White text for dark theme */
+        margin-bottom: 16px;
+        font-weight: 700;
+    }
+
+    /* Orange highlighted text inside the main title */
+    .family-platter-section h2 .text-accent {
+        color: #ff9800;
+    }
+
+    /* Subtitle paragraph styling */
+    .family-platter-section p {
+        font-size: 1.05rem;
+        line-height: 1.6;
+        color: #cccccc; /* Light grey readable text */
+        margin: 0 auto 30px auto;
+        max-width: 650px;
+    }
+
+    /* Container flexbox for the 12-pack and 24-pack cards */
+    .platter-highlights {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 32px;
+        flex-wrap: wrap; /* Stacks cards on mobile screens automatically */
+    }
+
+    /* Dark card box styling for platter sizes */
+    .platter-badge {
+        background: #181818;
+        border: 1px solid #333333;
+        border-radius: 12px;
+        padding: 16px 28px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 160px;
+    }
+
+    /* Large quantity text inside cards */
+    .platter-badge .count {
+        font-weight: 800;
+        font-size: 1.3rem;
+        color: #ffffff;
+    }
+
+    /* Label text under quantity */
+    .platter-badge .label {
+        font-size: 0.85rem;
+        color: #aaaaaa;
+        margin-top: 4px;
+    }
+
+    /* Orange Call-To-Action Button */
+    .family-platter-section .cta-button {
+        display: inline-block;
+        background-color: #ff9800; /* Matching website button orange */
+        color: #ffffff;
+        padding: 14px 32px;
+        border-radius: 50px;
+        font-size: 1rem;
+        font-weight: 700;
+        text-decoration: none;
+        transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+
+    /* Hover effect for the CTA button */
+    .family-platter-section .cta-button:hover {
+        background-color: #e68a00;
+        transform: translateY(-2px);
+    }
+</style>
+<!-- ================================================================= -->
+<!-- END: FAMILY PLATTER SECTION                                       -->
+<!-- ================================================================= -->
 
 <!-- PRICING & MENU SECTION -->
 <section class="max-w-6xl mx-auto px-6 py-16">
